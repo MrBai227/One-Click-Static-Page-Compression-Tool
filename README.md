@@ -16,8 +16,8 @@
 
 ```bash
 # 克隆项目
-git clone <repository-url>
-cd static-page-optimizer
+git clone https://github.com/MrBai227/One-Click-Static-Page-Compression-Tool.git
+cd One-Click-Static-Page-Compression-Tool
 
 # 安装依赖
 npm install
