@@ -1,0 +1,212 @@
+{
+  "inputDir": "./",
+  "outputDir": "./dist",
+  "html": {
+    "enabled": true,
+    "removeComments": true,
+    "removeCommentsFromCDATA": true,
+    "collapseWhitespace": true,
+    "collapseBooleanAttributes": true,
+    "removeAttributeQuotes": true,
+    "removeRedundantAttributes": true,
+    "useShortDoctype": true,
+    "removeEmptyAttributes": true,
+    "removeOptionalTags": true,
+    "removeEmptyElements": true,
+    "removeScriptTypeAttributes": true,
+    "removeStyleLinkTypeAttributes": true,
+    "removeHTMLComments": true,
+    "removeXMLProcInst": true,
+    "removeIntertagSpaces": true,
+    "sortAttributes": true,
+    "sortClassName": true
+  },
+  "css": {
+    "enabled": true,
+    "level": 2,
+    "format": {
+      "breaks": {
+        "afterAtRule": false,
+        "afterBlockBegins": false,
+        "afterBlockEnds": false,
+        "afterComment": false,
+        "afterProperty": false,
+        "afterRuleBegins": false,
+        "afterRuleEnds": false,
+        "beforeBlockEnds": false,
+        "betweenSelectors": false
+      },
+      "indentBy": 0,
+      "indentWith": "space",
+      "spaces": {
+        "aroundSelectorRelation": false,
+        "beforeBlockBegins": false,
+        "beforeValue": false
+      },
+      "wrapAt": false
+    },
+    "inline": false,
+    "rebase": false,
+    "returnPromise": false,
+    "sourceMap": false,
+    "sourceMapInlineSources": false
+  },
+  "js": {
+    "enabled": true,
+    "compress": {
+      "drop_console": true,
+      "drop_debugger": true,
+      "pure_funcs": [
+        "console.log",
+        "console.info",
+        "console.debug",
+        "console.warn"
+      ],
+      "passes": 2,
+      "unsafe": false,
+      "unsafe_comps": false,
+      "unsafe_Function": false,
+      "unsafe_math": false,
+      "unsafe_proto": false,
+      "unsafe_regexp": false,
+      "unsafe_undefined": false,
+      "conditionals": true,
+      "dead_code": true,
+      "evaluate": true,
+      "if_return": true,
+      "join_vars": true,
+      "loops": true,
+      "properties": true,
+      "reduce_vars": true,
+      "sequences": true,
+      "side_effects": true,
+      "switches": true,
+      "top_retain": false,
+      "typeofs": true,
+      "unused": true
+    },
+    "mangle": {
+      "toplevel": false,
+      "eval": false,
+      "keep_fnames": false,
+      "reserved": [],
+      "properties": {
+        "regex": {},
+        "reserved": []
+      }
+    },
+    "format": {
+      "comments": false,
+      "beautify": false,
+      "ascii_only": false,
+      "ecma": 5,
+      "indent_level": 0,
+      "indent_start": 0,
+      "inline_script": false,
+      "keep_numbers": false,
+      "max_line_len": false,
+      "preamble": null,
+      "preserve_annotations": false,
+      "quote_keys": false,
+      "quote_style": 0,
+      "safari10": false,
+      "semicolons": true,
+      "shebang": false,
+      "shorthand": false,
+      "source_map": null,
+      "webkit": false,
+      "width": 80,
+      "wrap_iife": false,
+      "wrap_func_args": false
+    },
+    "ecma": 5,
+    "enclose": false,
+    "keep_classnames": false,
+    "keep_fnames": false,
+    "module": false,
+    "nameCache": null,
+    "parse": {
+      "bare_returns": false,
+      "ecma": 5,
+      "html5_comments": true,
+      "shebang": true
+    },
+    "safari10": false,
+    "sourceMap": false,
+    "toplevel": false,
+    "warnings": false
+  },
+  "images": {
+    "enabled": true,
+    "jpeg": {
+      "quality": 80,
+      "progressive": true,
+      "arithmetic": false
+    },
+    "png": {
+      "quality": [
+        0.6,
+        0.8
+      ],
+      "speed": 1,
+      "strip": true
+    },
+    "svg": {
+      "plugins": [
+        {
+          "name": "preset-default",
+          "params": {
+            "overrides": {
+              "removeViewBox": false,
+              "removeUselessStrokeAndFill": true,
+              "removeEmptyAttrs": true,
+              "removeHiddenElems": true,
+              "removeEmptyText": true,
+              "removeEmptyContainers": true,
+              "removeUnusedNS": true,
+              "removeUselessDefs": true,
+              "removeEditorsNSData": true,
+              "removeMetadata": true,
+              "removeTitle": true,
+              "removeDesc": true,
+              "removeComments": true,
+              "removeDoctype": true,
+              "removeXMLProcInst": true,
+              "removeXMLNS": false,
+              "cleanupIDs": true,
+              "cleanupNumericValues": true,
+              "convertColors": true,
+              "convertPathData": true,
+              "convertShapeToPath": true,
+              "convertTransform": true,
+              "mergePaths": true,
+              "moveElemsAttrsToGroup": true,
+              "moveGroupAttrsToElems": true,
+              "removeAttrs": true,
+              "removeElementsByAttr": true,
+              "removeStyleElement": true,
+              "removeScriptElement": true,
+              "sortAttrs": true,
+              "transformsWithOnePath": true
+            }
+          }
+        }
+      ]
+    },
+    "webp": {
+      "quality": 80,
+      "method": 6,
+      "preset": "default",
+      "sns": 50,
+      "autoFilter": true,
+      "sharpness": 0,
+      "lossless": false,
+      "nearLossless": false,
+      "smartSubsample": false,
+      "mixed": false
+    },
+    "generateWebP": false
+  },
+  "backup": false,
+  "verbose": false
+}

@@ -1,0 +1,60 @@
+{
+  "name": "static-page-optimizer",
+  "version": "1.0.0",
+  "description": "静态页面一键瘦身工具 - 优化HTML、CSS、JS、图片等静态资源",
+  "main": "index.js",
+  "bin": {
+    "static-optimizer": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "build": "nexe bin/cli.js --target macos-x64-18.0.0 --output static-optimizer-macos",
+    "build-linux": "nexe bin/cli.js --target linux-x64-18.0.0 --output static-optimizer-linux",
+    "build-windows": "nexe bin/cli.js --target windows-x64-18.0.0 --output static-optimizer-windows.exe"
+  },
+  "keywords": [
+    "optimization",
+    "static",
+    "html",
+    "css",
+    "javascript",
+    "minify",
+    "compress"
+  ],
+  "author": "Static Page Optimizer",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "glob": "^10.3.10",
+    "html-minifier-terser": "^7.2.0",
+    "clean-css": "^5.3.2",
+    "terser": "^5.24.0",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^10.0.1",
+    "imagemin-webp": "^8.0.0",
+    "purgecss": "^6.0.0",
+    "postcss": "^8.4.32",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^9.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "assets": [
+      "lib/**/*",
+      "bin/**/*"
+    ],
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64", 
+      "node18-win-x64"
+    ]
+  }
+}
