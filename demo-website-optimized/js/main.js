@@ -1,0 +1,1 @@
+function showMessage(n){alert(n)}function formatDate(n){return n.toLocaleDateString("zh-CN")}document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll("nav a").forEach(n=>{n.addEventListener("click",function(n){})}),window.addEventListener("scroll",function(){window.pageYOffset})})
